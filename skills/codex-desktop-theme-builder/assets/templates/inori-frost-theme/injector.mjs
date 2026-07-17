@@ -127,15 +127,15 @@ function pageBootstrap(themeCss, version) {
     root.classList.toggle("inori-frost-task-running", taskState === "running");
     root.classList.toggle("inori-frost-task-complete", taskState === "complete");
 
-    const chrome = composer.querySelector(".composer-surface-chrome") ?? composer;
+    const statusHost = composer;
     let status = document.getElementById(TASK_STATUS_ID);
-    if (!status || status.dataset.conversationId !== conversationId || status.parentElement !== chrome) {
+    if (!status || status.dataset.conversationId !== conversationId || status.parentElement !== statusHost) {
       status?.remove();
       status = document.createElement("div");
       status.id = TASK_STATUS_ID;
       status.setAttribute("aria-hidden", "true");
       status.dataset.conversationId = conversationId;
-      chrome.appendChild(status);
+      statusHost.appendChild(status);
     }
     if (status.dataset.state !== taskState || !status.querySelector("[data-inori-status-label]")) {
       status.dataset.state = taskState;
@@ -145,6 +145,14 @@ function pageBootstrap(themeCss, version) {
       label.dataset.inoriStatusLabel = "";
       label.textContent = taskState === "running" ? "正在执行" : "回复已完成";
       status.replaceChildren(code, label);
+    }
+    const chrome = composer.querySelector(".composer-surface-chrome");
+    if (chrome) {
+      const composerTop = composer.getBoundingClientRect().top;
+      const chromeTop = chrome.getBoundingClientRect().top;
+      const statusGap = 4;
+      const statusTop = Math.max(0, Math.round(chromeTop - composerTop - status.offsetHeight - statusGap));
+      status.style.setProperty("--inori-task-status-top", `${statusTop}px`);
     }
     return taskState;
   }

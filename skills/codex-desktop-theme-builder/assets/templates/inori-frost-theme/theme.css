@@ -466,6 +466,7 @@ html.inori-frost-theme main button.min-h-26:hover { transform: translateY(-2px) 
 html.inori-frost-theme main button.min-h-26:hover::before { transform: translateX(130%); }
 
 html.inori-frost-theme [data-codex-composer-root] { position: relative !important; z-index: 8 !important; filter: drop-shadow(0 16px 26px rgba(44,135,176,.16)); }
+html.inori-frost-theme [data-codex-composer-root][data-inori-task-state] .composer-surface-chrome { margin-top: 31px !important; }
 html.inori-frost-theme .composer-surface-chrome {
   overflow: hidden !important;
   border: 1px solid rgba(92,190,228,.72) !important;
@@ -687,8 +688,8 @@ html.inori-frost-theme [role="tab"][aria-selected="true"] {
 /* v1.5: restrained aurora-rift and snow-crystal seal task states. */
 #inori-frost-task-status {
   position: absolute;
-  z-index: 6;
-  top: 8px;
+  z-index: 24;
+  top: var(--inori-task-status-top, 0px);
   right: 12px;
   display: inline-flex;
   height: 27px;
@@ -779,6 +780,10 @@ html.inori-frost-theme [role="tab"][aria-selected="true"] {
 #inori-frost-task-status[data-state="complete"]::after {
   background: linear-gradient(90deg, transparent, rgba(112,170,197,.46) 32%, rgba(255,255,255,.96) 50%, rgba(217,169,203,.32) 68%, transparent);
   filter: drop-shadow(0 0 3px rgba(110,174,201,.44));
+}
+
+@media (max-width: 560px) {
+  #inori-frost-task-status span { display: none; }
 }
 
 html.inori-frost-theme [data-codex-composer-root][data-inori-task-state="running"] .composer-surface-chrome {
