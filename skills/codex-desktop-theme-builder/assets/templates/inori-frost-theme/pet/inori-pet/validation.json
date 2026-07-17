@@ -1,0 +1,30 @@
+{
+  "file": "spritesheet.webp",
+  "format": "WEBP",
+  "mode": "RGBA",
+  "width": 1536,
+  "height": 1872,
+  "columns": 8,
+  "rows": 9,
+  "cellWidth": 192,
+  "cellHeight": 208,
+  "transparentCorners": true,
+  "transparentRgbResiduePixels": 0,
+  "errors": [],
+  "warnings": [],
+  "visualQa": {
+    "status": "pass",
+    "states": [
+      "idle",
+      "running-right",
+      "running-left",
+      "waving",
+      "jumping",
+      "failed",
+      "waiting",
+      "running",
+      "review"
+    ],
+    "note": "All rows preserve the original ice-crystal character identity, state semantics, transparent presentation, and clean slot boundaries."
+  }
+}

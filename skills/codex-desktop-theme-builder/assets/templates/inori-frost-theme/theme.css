@@ -1,0 +1,969 @@
+/* Inori Frost Theme for Codex Desktop — semantic-token override, v1.7.2 */
+
+html.inori-frost-theme {
+  color-scheme: light;
+  --inori-snow: #f6fdff;
+  --inori-ice-0: #eefbff;
+  --inori-ice-1: #ddf7ff;
+  --inori-ice-2: #bdeeff;
+  --inori-ice-3: #89d9f2;
+  --inori-ice-4: #55bde8;
+  --inori-lavender: #d9d7ff;
+  --inori-navy: #24465f;
+  --inori-muted: #66879c;
+
+  --gray-0: #f9feff !important;
+  --gray-50: #f2fbff !important;
+  --gray-75: #eaf8fd !important;
+  --gray-100: #dceff7 !important;
+  --gray-300: #91b8ca !important;
+  --gray-500: #52728a !important;
+  --gray-550: #45677f !important;
+  --gray-600: #365970 !important;
+  --gray-700: #294b62 !important;
+  --gray-750: #24465f !important;
+  --gray-800: #1d3a50 !important;
+  --gray-900: #162f43 !important;
+  --gray-1000: #102638 !important;
+
+  --color-background-surface: rgba(247, 253, 255, 0.9) !important;
+  --color-background-elevated-primary-opaque: #f7fdff !important;
+  --color-background-elevated-secondary: rgba(221, 247, 255, 0.84) !important;
+  --color-text-primary: var(--inori-navy) !important;
+  --color-text-secondary: #486b83 !important;
+  --color-text-tertiary: #6d8ea2 !important;
+  --color-border: rgba(111, 199, 231, 0.58) !important;
+
+  --vscode-foreground: var(--inori-navy) !important;
+  --vscode-descriptionForeground: var(--inori-muted) !important;
+  --vscode-focusBorder: #55bde8 !important;
+  --vscode-textLink-foreground: #238fbe !important;
+  --vscode-textLink-activeForeground: #166f9c !important;
+  --vscode-textPreformat-foreground: #29556f !important;
+  --vscode-textPreformat-background: rgba(193, 235, 250, 0.54) !important;
+  --vscode-textCodeBlock-background: rgba(236, 249, 255, 0.94) !important;
+  --vscode-sideBar-background: rgba(237, 249, 254, 0.92) !important;
+  --vscode-editor-background: rgba(247, 253, 255, 0.95) !important;
+  --vscode-editor-foreground: #183d56 !important;
+  --vscode-editorWidget-background: rgba(244, 252, 255, 0.98) !important;
+  --vscode-input-background: rgba(250, 254, 255, 0.9) !important;
+  --vscode-input-foreground: var(--inori-navy) !important;
+  --vscode-input-placeholderForeground: #7797aa !important;
+  --vscode-input-border: rgba(102, 195, 228, 0.66) !important;
+  --vscode-dropdown-background: rgba(246, 253, 255, 0.98) !important;
+  --vscode-dropdown-foreground: var(--inori-navy) !important;
+  --vscode-list-hoverBackground: rgba(198, 239, 252, 0.66) !important;
+  --vscode-list-activeSelectionBackground: rgba(157, 222, 245, 0.56) !important;
+  --vscode-list-activeSelectionForeground: #173c55 !important;
+  --vscode-list-focusOutline: #57bfe8 !important;
+  --vscode-button-background: #55bde8 !important;
+  --vscode-button-foreground: #fff !important;
+  --vscode-button-border: rgba(255, 255, 255, 0.72) !important;
+  --vscode-button-secondaryHoverBackground: rgba(180, 232, 249, 0.76) !important;
+  --vscode-toolbar-hoverBackground: rgba(189, 238, 253, 0.7) !important;
+  --vscode-menu-background: rgba(247, 253, 255, 0.98) !important;
+  --vscode-menu-foreground: var(--inori-navy) !important;
+  --vscode-menu-border: rgba(109, 199, 231, 0.58) !important;
+  --vscode-scrollbarSlider-background: rgba(76, 165, 202, 0.2) !important;
+  --vscode-scrollbarSlider-hoverBackground: rgba(76, 165, 202, 0.36) !important;
+  --vscode-scrollbarSlider-activeBackground: rgba(49, 139, 179, 0.48) !important;
+
+  --color-token-foreground: var(--inori-navy) !important;
+  --color-token-text-primary: var(--inori-navy) !important;
+  --color-token-text-secondary: #4c6e85 !important;
+  --color-token-text-tertiary: #708fa2 !important;
+  --color-token-description-foreground: var(--inori-muted) !important;
+  --color-token-icon-foreground: #4b7d99 !important;
+  --color-token-focus-border: #55bde8 !important;
+  --color-token-primary: #289bc9 !important;
+  --color-token-link: #238fbe !important;
+  --color-token-side-bar-background: rgba(237, 249, 254, 0.92) !important;
+  --color-token-bg-primary: rgba(237, 249, 254, 0.92) !important;
+  --color-token-bg-secondary: rgba(226, 246, 253, 0.84) !important;
+  --color-token-bg-tertiary: rgba(210, 240, 251, 0.74) !important;
+  --color-token-main-surface-primary: rgba(248, 253, 255, 0.9) !important;
+  --color-token-input-background: rgba(250, 254, 255, 0.9) !important;
+  --color-token-input-foreground: var(--inori-navy) !important;
+  --color-token-input-placeholder-foreground: #7797aa !important;
+  --color-token-input-border: rgba(102, 195, 228, 0.66) !important;
+  --color-token-dropdown-background: rgba(246, 253, 255, 0.98) !important;
+  --color-token-dropdown-foreground: var(--inori-navy) !important;
+  --color-token-menu-background: rgba(247, 253, 255, 0.98) !important;
+  --color-token-menu-border: rgba(109, 199, 231, 0.58) !important;
+  --color-token-list-hover-background: rgba(198, 239, 252, 0.66) !important;
+  --color-token-list-active-selection-background: rgba(157, 222, 245, 0.56) !important;
+  --color-token-list-active-selection-foreground: #173c55 !important;
+  --color-token-toolbar-hover-background: rgba(189, 238, 253, 0.7) !important;
+  --color-token-border: rgba(111, 199, 231, 0.58) !important;
+  --color-token-border-default: rgba(111, 199, 231, 0.58) !important;
+  --color-token-border-light: rgba(146, 215, 238, 0.38) !important;
+  --color-token-border-heavy: rgba(71, 166, 205, 0.62) !important;
+  --color-token-button-background: #55bde8 !important;
+  --color-token-button-foreground: #fff !important;
+  --color-token-button-border: rgba(255, 255, 255, 0.72) !important;
+  --color-token-selection-background: rgba(111, 211, 242, 0.35) !important;
+  --color-token-editor-background: rgba(247, 253, 255, 0.95) !important;
+  --color-token-editor-foreground: #183d56 !important;
+  --color-token-editor-widget-background: rgba(244, 252, 255, 0.98) !important;
+  --color-token-terminal-background: #eef8fc !important;
+  --color-token-terminal-foreground: #183d56 !important;
+  --color-token-terminal-border: rgba(111, 199, 231, 0.5) !important;
+  --codex-titlebar-tint: rgba(241, 251, 255, 0.9) !important;
+  --corner-radius-scale: 1.08;
+  --shadow-hairline: 0 0 0 0.5px rgba(78, 169, 207, 0.42) !important;
+  --shadow-md-stronger: 0 8px 24px -14px rgba(50, 135, 173, 0.42) !important;
+}
+
+html.inori-frost-theme,
+html.inori-frost-theme body,
+html.inori-frost-theme #root {
+  background: transparent !important;
+  color: var(--inori-navy) !important;
+}
+
+html.inori-frost-theme body {
+  background:
+    radial-gradient(circle at 78% 10%, rgba(212, 215, 255, 0.64), transparent 29%),
+    radial-gradient(circle at 54% 18%, rgba(169, 233, 255, 0.74), transparent 33%),
+    linear-gradient(145deg, #f8feff 0%, #e9f9ff 46%, #edf3ff 100%) !important;
+}
+
+html.inori-frost-theme ::selection {
+  background: rgba(101, 205, 239, 0.34) !important;
+  color: #173b54 !important;
+}
+
+html.inori-frost-theme .app-header-tint {
+  background: linear-gradient(90deg, rgba(248, 254, 255, 0.94), rgba(225, 246, 255, 0.82) 62%, rgba(232, 235, 255, 0.8)) !important;
+  border-bottom: 1px solid rgba(119, 204, 233, 0.44) !important;
+  box-shadow: 0 2px 16px rgba(74, 159, 196, 0.08) !important;
+  backdrop-filter: blur(18px) saturate(1.15) !important;
+}
+
+html.inori-frost-theme .app-shell-left-panel {
+  background: linear-gradient(164deg, rgba(250, 254, 255, 0.95), rgba(226, 246, 253, 0.9) 52%, rgba(231, 238, 255, 0.88)) !important;
+  border-right: 1px solid rgba(111, 199, 231, 0.52) !important;
+  box-shadow: 10px 0 34px rgba(63, 150, 190, 0.1) !important;
+  backdrop-filter: blur(22px) saturate(1.12) !important;
+}
+
+html.inori-frost-theme .app-shell-left-panel::after {
+  width: 1px !important;
+  background: linear-gradient(180deg, transparent, rgba(92, 190, 225, 0.68), transparent) !important;
+}
+
+html.inori-frost-theme .app-shell-left-panel nav::before {
+  content: "INORI  FROST";
+  display: block;
+  margin: 8px 14px 5px;
+  padding: 7px 10px;
+  border: 1px solid rgba(128, 208, 237, 0.42);
+  border-radius: 11px;
+  color: rgba(52, 111, 145, 0.72);
+  background: linear-gradient(135deg, rgba(255,255,255,.65), rgba(202,239,252,.48));
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10px;
+  letter-spacing: .24em;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
+}
+
+html.inori-frost-theme .app-shell-left-panel button,
+html.inori-frost-theme .app-shell-left-panel [role="button"] { border-radius: 10px !important; }
+
+html.inori-frost-theme main.main-surface {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+html.inori-frost-theme main.main-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 78% 12%, rgba(206,221,255,.58), transparent 30%),
+    radial-gradient(circle at 45% 6%, rgba(170,235,255,.72), transparent 32%),
+    radial-gradient(circle at 68% 72%, rgba(216,246,255,.56), transparent 34%),
+    linear-gradient(150deg, rgba(249,254,255,.98), rgba(229,248,255,.96) 54%, rgba(235,239,255,.94));
+}
+
+html.inori-frost-theme main.main-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: .36;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.96) 0 1px, transparent 1.6px),
+    radial-gradient(circle, rgba(116,206,238,.48) 0 1px, transparent 1.8px),
+    linear-gradient(118deg, transparent 0 48%, rgba(255,255,255,.42) 49%, transparent 50%);
+  background-size: 43px 43px, 71px 71px, 180px 180px;
+  background-position: 0 0, 20px 14px, 0 0;
+}
+
+/* v1.7: the chat canvas becomes a quiet aurora-frost relay map. */
+html.inori-frost-theme.inori-frost-task-running:not(.inori-frost-home) main.main-surface::before {
+  background:
+    radial-gradient(ellipse at 10% 90%, rgba(67,208,244,.2), transparent 32%),
+    radial-gradient(ellipse at 91% 10%, rgba(139,116,235,.18), transparent 30%),
+    radial-gradient(ellipse at 52% 48%, rgba(126,228,248,.08), transparent 44%),
+    linear-gradient(142deg, rgba(249,254,255,.99) 0%, rgba(232,249,254,.98) 50%, rgba(242,240,255,.96) 100%);
+  background-size: 132% 132%, 126% 126%, 108% 108%, 100% 100%;
+  animation: inori-task-running-canvas-pulse 7.2s ease-in-out infinite alternate;
+}
+html.inori-frost-theme.inori-frost-task-running:not(.inori-frost-home) main.main-surface::after {
+  opacity: .48;
+  background:
+    linear-gradient(90deg, transparent 0 9%, rgba(75,205,244,.62) 26%, rgba(255,255,255,.96) 43%, rgba(151,126,237,.54) 55%, transparent 78%) 130% 0 / 220% 2px no-repeat,
+    radial-gradient(circle, rgba(255,255,255,.92) 0 1px, transparent 1.7px) 0 0 / 57px 57px repeat,
+    radial-gradient(circle, rgba(120,188,239,.42) 0 1px, transparent 1.8px) 22px 16px / 97px 97px repeat;
+  filter: drop-shadow(0 0 7px rgba(87,188,232,.18));
+  animation: inori-task-running-canvas-flow 8.4s linear infinite;
+}
+
+html.inori-frost-theme.inori-frost-task-complete:not(.inori-frost-home) main.main-surface::before {
+  background:
+    radial-gradient(ellipse at 15% 88%, rgba(94,203,194,.16), transparent 34%),
+    radial-gradient(ellipse at 88% 13%, rgba(224,180,209,.17), transparent 31%),
+    radial-gradient(ellipse at 50% 45%, rgba(255,255,255,.78), transparent 42%),
+    linear-gradient(142deg, rgba(251,255,255,.99) 0%, rgba(234,248,249,.98) 52%, rgba(247,241,247,.96) 100%);
+}
+html.inori-frost-theme.inori-frost-task-complete:not(.inori-frost-home) main.main-surface::after {
+  opacity: .42;
+  background:
+    linear-gradient(90deg, transparent, rgba(95,184,190,.5) 30%, rgba(255,255,255,.98) 50%, rgba(217,168,203,.4) 70%, transparent) 50% 0 / 74% 2px no-repeat,
+    radial-gradient(circle, rgba(255,255,255,.98) 0 1px, transparent 1.7px) 0 0 / 53px 53px repeat,
+    radial-gradient(circle, rgba(104,181,197,.4) 0 1px, transparent 1.8px) 23px 17px / 89px 89px repeat;
+  filter: drop-shadow(0 0 5px rgba(107,178,195,.12));
+  animation: inori-task-complete-canvas-seal 1.15s cubic-bezier(.18,.85,.3,1) both;
+}
+
+#inori-frost-signal-map {
+  display: none;
+  position: absolute;
+  z-index: 0;
+  inset: 46px 0 0;
+  width: 100%;
+  height: calc(100% - 46px);
+  overflow: hidden;
+  pointer-events: none;
+  shape-rendering: geometricPrecision;
+}
+#inori-frost-signal-map path,
+#inori-frost-signal-map circle { vector-effect: non-scaling-stroke; }
+#inori-frost-signal-map .inori-map-stars { opacity: .92; }
+#inori-frost-signal-map .inori-star {
+  opacity: var(--inori-star-alpha, .72);
+  stroke-width: .42px;
+}
+#inori-frost-signal-map .inori-star-ice {
+  fill: rgba(250,255,255,.98);
+  stroke: rgba(62,157,196,.58);
+}
+#inori-frost-signal-map .inori-star-cyan {
+  fill: rgba(55,170,211,.82);
+  stroke: rgba(226,250,255,.7);
+}
+#inori-frost-signal-map .inori-star-violet {
+  fill: rgba(143,126,226,.68);
+  stroke: rgba(246,243,255,.68);
+}
+#inori-frost-signal-map .inori-star-bright {
+  transform-box: fill-box;
+  transform-origin: center;
+  filter: drop-shadow(0 0 4px rgba(113,202,232,.7));
+}
+#inori-frost-signal-map .inori-star-flare-rays {
+  fill: none;
+  stroke: rgba(71,168,204,.58);
+  stroke-width: .58px;
+  stroke-linecap: round;
+  opacity: .78;
+  filter: drop-shadow(0 0 3px rgba(121,209,235,.48));
+}
+#inori-frost-signal-map .inori-star-flare-violet .inori-star-flare-rays {
+  stroke: rgba(143,126,226,.55);
+}
+#inori-frost-signal-map .inori-map-contours path {
+  fill: none;
+  stroke: rgba(75,143,169,.075);
+  stroke-width: 1px;
+  stroke-dasharray: 2 9;
+}
+#inori-frost-signal-map .inori-route-base,
+#inori-frost-signal-map .inori-route-pulse {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+#inori-frost-signal-map .inori-route-pulse.inori-route-pulse-core {
+  stroke-width: 1.45px;
+  stroke-dasharray: .8 18;
+  filter: drop-shadow(0 0 2px rgba(55,190,228,.42));
+}
+#inori-frost-signal-map .inori-route-base {
+  stroke: rgba(58,150,184,.14);
+  stroke-width: 1.1px;
+}
+#inori-frost-signal-map .inori-route-pulse {
+  opacity: 0;
+  stroke: rgba(54,193,229,.88);
+  stroke-width: 2px;
+  stroke-dasharray: 1.4 10;
+  filter: drop-shadow(0 0 3px rgba(55,190,228,.72));
+}
+#inori-frost-signal-map .inori-route-b .inori-route-pulse {
+  stroke: rgba(143,126,226,.78);
+  filter: drop-shadow(0 0 3px rgba(135,117,224,.56));
+}
+#inori-frost-signal-map .inori-map-node { color: rgba(47,125,156,.62); }
+#inori-frost-signal-map .inori-node-ring {
+  fill: rgba(244,253,255,.82);
+  stroke: currentColor;
+  stroke-width: 1px;
+}
+#inori-frost-signal-map .inori-node-core { fill: currentColor; }
+#inori-frost-signal-map .inori-node-seal {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: .8px;
+  stroke-linecap: round;
+  opacity: .22;
+}
+#inori-frost-signal-map text {
+  fill: currentColor;
+  font-family: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 1.15px;
+}
+
+html.inori-frost-theme.inori-frost-task-running:not(.inori-frost-home) #inori-frost-signal-map {
+  display: block;
+  opacity: .76;
+  animation: inori-signal-map-breathe 7.4s ease-in-out infinite alternate;
+}
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-route-pulse-edge {
+  opacity: .9;
+  animation: inori-signal-route-forward 5.8s linear infinite;
+}
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-route-b .inori-route-pulse-edge {
+  animation-duration: 7.2s;
+  animation-direction: reverse;
+}
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-route-c .inori-route-pulse-edge {
+  animation-duration: 6.5s;
+  animation-delay: -2.2s;
+}
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-route-pulse-core {
+  opacity: .34;
+  animation: inori-signal-route-forward 18s linear infinite;
+}
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-star-bright {
+  animation: inori-signal-star-twinkle 9.5s ease-in-out infinite;
+}
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-star-flare-rays {
+  animation: inori-signal-star-ray-twinkle 12s ease-in-out var(--inori-flare-delay, 0s) infinite;
+}
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-star-bright:nth-child(3n) { animation-duration: 7.6s; animation-delay: -2.4s; }
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-star-bright:nth-child(3n + 1) { animation-duration: 11s; animation-delay: -5.2s; }
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-map-node {
+  animation: inori-signal-beacon 3.2s ease-in-out infinite;
+}
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-node-b,
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-node-e { animation-delay: -1.1s; }
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-node-c,
+html.inori-frost-theme.inori-frost-task-running #inori-frost-signal-map .inori-node-f { animation-delay: -2.15s; }
+
+html.inori-frost-theme.inori-frost-task-complete:not(.inori-frost-home) #inori-frost-signal-map {
+  display: block;
+  opacity: .62;
+  animation: inori-signal-map-freeze 1.1s cubic-bezier(.18,.85,.3,1) both;
+}
+html.inori-frost-theme.inori-frost-task-complete #inori-frost-signal-map .inori-map-contours path {
+  stroke: rgba(91,151,166,.13);
+  stroke-dasharray: none;
+}
+html.inori-frost-theme.inori-frost-task-complete #inori-frost-signal-map .inori-route-base {
+  stroke: rgba(75,151,169,.27);
+}
+html.inori-frost-theme.inori-frost-task-complete #inori-frost-signal-map .inori-map-node {
+  color: rgba(74,140,157,.52);
+}
+html.inori-frost-theme.inori-frost-task-complete #inori-frost-signal-map .inori-terminal {
+  color: rgba(75,157,169,.8);
+  filter: drop-shadow(0 0 5px rgba(98,183,196,.4));
+  animation: inori-signal-terminal-seal 1s cubic-bezier(.18,.86,.28,1) both;
+}
+html.inori-frost-theme.inori-frost-task-complete #inori-frost-signal-map .inori-terminal .inori-node-seal { opacity: .92; }
+
+html.inori-frost-theme .app-shell-main-content-viewport,
+html.inori-frost-theme .app-shell-main-content-frame { background: transparent !important; }
+html.inori-frost-theme main.main-surface > .app-shell-main-content-viewport { position: relative !important; z-index: 1 !important; }
+
+#inori-frost-hero {
+  display: none;
+  position: absolute;
+  z-index: 0;
+  inset: 46px 0 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: .76;
+  background-image: var(--inori-hero-image);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  filter: saturate(.92) contrast(.96) brightness(1.035);
+}
+#inori-frost-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(247,253,255,.42) 0%, rgba(241,252,255,.2) 48%, transparent 72%),
+    linear-gradient(180deg, transparent 0 52%, rgba(241,251,255,.2) 68%, rgba(240,249,255,.52) 100%);
+}
+html.inori-frost-theme.inori-frost-home #inori-frost-hero { display: block; }
+
+#inori-frost-badge {
+  display: none;
+  position: absolute;
+  z-index: 40;
+  top: 9px;
+  left: 24px;
+  pointer-events: none;
+  align-items: center;
+  gap: 9px;
+  color: #285875;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-shadow: 0 1px 0 rgba(255,255,255,.88);
+}
+#inori-frost-badge::before { content: "✦"; color: #51bce6; font-size: 17px; filter: drop-shadow(0 0 7px rgba(86,194,231,.66)); }
+#inori-frost-badge span { margin-left: 3px; color: rgba(62,117,148,.58); font-family: Georgia, "Times New Roman", serif; font-size: 9px; font-weight: 400; letter-spacing: .2em; }
+html.inori-frost-theme.inori-frost-home #inori-frost-badge { display: flex; }
+
+html.inori-frost-theme main button.min-h-26 {
+  position: relative !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(115,204,235,.66) !important;
+  border-radius: 18px !important;
+  color: #244d68 !important;
+  background: linear-gradient(145deg, rgba(255,255,255,.92), rgba(225,247,255,.8) 68%, rgba(227,230,255,.72)) !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.72), inset 0 14px 28px rgba(255,255,255,.42), 0 12px 30px -18px rgba(38,127,167,.55) !important;
+  backdrop-filter: blur(16px) saturate(1.08) !important;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease !important;
+}
+html.inori-frost-theme main button.min-h-26::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(118deg, transparent 0 38%, rgba(255,255,255,.76) 48%, transparent 58%); transform: translateX(-130%); transition: transform 520ms ease; }
+html.inori-frost-theme main button.min-h-26::after { content: "✦"; position: absolute; right: 12px; bottom: 9px; color: rgba(73,177,217,.56); font-size: 13px; text-shadow: 0 0 8px rgba(79,190,230,.58); }
+html.inori-frost-theme main button.min-h-26:hover { transform: translateY(-2px) !important; border-color: rgba(65,173,216,.82) !important; box-shadow: inset 0 0 0 1px rgba(255,255,255,.78), 0 16px 36px -18px rgba(34,128,172,.62) !important; }
+html.inori-frost-theme main button.min-h-26:hover::before { transform: translateX(130%); }
+
+html.inori-frost-theme [data-codex-composer-root] { position: relative !important; z-index: 8 !important; filter: drop-shadow(0 16px 26px rgba(44,135,176,.16)); }
+html.inori-frost-theme .composer-surface-chrome {
+  overflow: hidden !important;
+  border: 1px solid rgba(92,190,228,.72) !important;
+  border-radius: 22px !important;
+  background: linear-gradient(155deg, rgba(255,255,255,.93), rgba(232,249,255,.88) 62%, rgba(237,239,255,.82)) !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.86), inset 0 16px 32px rgba(255,255,255,.34), 0 0 0 3px rgba(162,226,247,.18), 0 15px 36px -22px rgba(42,132,171,.62) !important;
+  backdrop-filter: blur(24px) saturate(1.12) !important;
+}
+html.inori-frost-theme .composer-surface-chrome::after { content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit; background: linear-gradient(115deg, rgba(255,255,255,.56), transparent 25% 76%, rgba(168,224,247,.28)), radial-gradient(circle at 93% 18%, rgba(196,199,255,.44), transparent 28%); }
+html.inori-frost-theme [data-codex-composer="true"] { color: #234b65 !important; caret-color: #2da2d0 !important; }
+
+html.inori-frost-theme [role="dialog"],
+html.inori-frost-theme [role="menu"],
+html.inori-frost-theme [data-radix-popper-content-wrapper] > * {
+  border-color: rgba(106,196,229,.54) !important;
+  box-shadow: 0 18px 48px -24px rgba(31,111,149,.42) !important;
+  backdrop-filter: blur(22px) saturate(1.1) !important;
+}
+
+/* The model submenu scrolls vertically only; suppress Chromium's horizontal track. */
+html.inori-frost-theme [role="menu"]:has(.vertical-scroll-fade-mask),
+html.inori-frost-theme [role="menu"] .vertical-scroll-fade-mask {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior-x: none;
+}
+html.inori-frost-theme [role="menu"]:has(.vertical-scroll-fade-mask)::-webkit-scrollbar:horizontal,
+html.inori-frost-theme [role="menu"] .vertical-scroll-fade-mask::-webkit-scrollbar:horizontal {
+  display: none !important;
+  height: 0 !important;
+}
+
+html.inori-frost-theme pre,
+html.inori-frost-theme code,
+html.inori-frost-theme .monaco-editor,
+html.inori-frost-theme .xterm { text-shadow: none !important; }
+html.inori-frost-theme ::-webkit-scrollbar-thumb { border: 3px solid transparent; border-radius: 999px; background: rgba(66,157,197,.28); background-clip: padding-box; }
+html.inori-frost-theme ::-webkit-scrollbar-thumb:hover { background: rgba(58,151,193,.44); background-clip: padding-box; }
+
+/* v1.2: shared crystalline interaction language */
+html.inori-frost-theme button.border-token-border,
+html.inori-frost-theme .app-shell-left-panel button:not(.sr-only),
+html.inori-frost-theme [data-app-action-sidebar-project-row],
+html.inori-frost-theme [data-app-action-sidebar-thread-row],
+html.inori-frost-theme [data-slot="thread-summary-panel-item-button"],
+html.inori-frost-theme [data-user-message-bubble],
+html.inori-frost-theme [data-file-reference],
+html.inori-frost-theme [data-testid="generated-image-preview"],
+html.inori-frost-theme [role="menuitem"],
+html.inori-frost-theme [role="option"],
+html.inori-frost-theme [role="tab"] {
+  transition:
+    color 150ms ease,
+    background-color 150ms ease,
+    border-color 150ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease,
+    transform 180ms ease !important;
+}
+
+/* Standard icon and action buttons: faceted highlight + cold glow. */
+html.inori-frost-theme button.border-token-border:not(:disabled):hover,
+html.inori-frost-theme button.border-token-border[data-state="open"] {
+  border-color: rgba(88, 191, 228, .68) !important;
+  color: #245672 !important;
+  background:
+    radial-gradient(circle at 78% 20%, rgba(255,255,255,.98) 0 1px, transparent 1.8px),
+    linear-gradient(118deg, transparent 0 37%, rgba(255,255,255,.78) 48%, transparent 59%),
+    linear-gradient(145deg, rgba(250,254,255,.96), rgba(207,241,252,.8) 67%, rgba(224,226,255,.65)) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.72),
+    0 0 0 1px rgba(111,205,236,.13),
+    0 7px 18px -12px rgba(32,129,170,.72),
+    0 0 15px rgba(111,211,242,.22) !important;
+  filter: saturate(1.08) drop-shadow(0 0 5px rgba(128,217,244,.2));
+  transform: translateY(-1px);
+}
+html.inori-frost-theme button.border-token-border:not(:disabled):active {
+  box-shadow: inset 0 2px 7px rgba(46,139,178,.18), 0 0 0 1px rgba(102,202,235,.32) !important;
+  transform: translateY(0) scale(.97);
+}
+
+/* Sidebar navigation and rows: ice-surface sweep without changing hit areas. */
+html.inori-frost-theme .app-shell-left-panel button:not(.sr-only):hover,
+html.inori-frost-theme .app-shell-left-panel button[data-state="open"],
+html.inori-frost-theme [data-app-action-sidebar-project-row]:hover,
+html.inori-frost-theme [data-app-action-sidebar-thread-row]:hover {
+  color: #234f6a !important;
+  background:
+    radial-gradient(circle at 90% 22%, rgba(255,255,255,.95) 0 1px, transparent 2px),
+    linear-gradient(112deg, transparent 0 34%, rgba(255,255,255,.7) 47%, transparent 59%),
+    linear-gradient(100deg, rgba(222,247,255,.72), rgba(193,232,249,.7) 63%, rgba(220,221,255,.56)) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(116,205,235,.48),
+    inset 3px 0 0 rgba(83,189,227,.5),
+    0 7px 18px -15px rgba(35,124,164,.72) !important;
+  filter: brightness(1.025);
+}
+html.inori-frost-theme [data-app-action-sidebar-project-row]:hover,
+html.inori-frost-theme [data-app-action-sidebar-thread-row]:hover {
+  transform: translateX(2px);
+}
+html.inori-frost-theme [data-app-action-sidebar-thread-active="true"] {
+  color: #173f59 !important;
+  background: linear-gradient(100deg, rgba(188,235,251,.84), rgba(214,244,253,.76) 62%, rgba(220,219,255,.64)) !important;
+  box-shadow: inset 3px 0 0 #57bfe8, inset 0 0 0 1px rgba(91,191,227,.52), 0 0 16px rgba(93,197,232,.18) !important;
+}
+
+/* Composer: stronger frost ring when the user is actively writing. */
+html.inori-frost-theme [data-codex-composer-root]:hover .composer-surface-chrome {
+  border-color: rgba(76,184,224,.82) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.9),
+    inset 0 18px 34px rgba(255,255,255,.38),
+    0 0 0 3px rgba(145,222,247,.2),
+    0 17px 40px -24px rgba(34,125,167,.72) !important;
+}
+html.inori-frost-theme [data-codex-composer-root]:focus-within .composer-surface-chrome {
+  border-color: rgba(62,174,218,.92) !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.94),
+    inset 0 18px 36px rgba(255,255,255,.42),
+    0 0 0 3px rgba(115,211,242,.25),
+    0 0 24px rgba(88,199,235,.24),
+    0 19px 44px -24px rgba(26,113,155,.78) !important;
+}
+html.inori-frost-theme [data-codex-composer-root]:focus-within .composer-surface-chrome::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 10%;
+  left: 10%;
+  height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.98) 26%, rgba(102,211,243,.9) 50%, rgba(255,255,255,.98) 74%, transparent);
+  filter: drop-shadow(0 0 6px rgba(89,203,238,.82));
+}
+
+/* Thread actions, links and previews. */
+html.inori-frost-theme [data-slot="thread-summary-panel-item-button"]:hover {
+  color: #214f6a !important;
+  filter: drop-shadow(0 3px 7px rgba(80,176,213,.16));
+  transform: translateX(2px);
+}
+html.inori-frost-theme [data-slot="thread-summary-panel-item-button"]:hover::before {
+  background: linear-gradient(100deg, rgba(209,242,253,.72), rgba(225,246,253,.52), rgba(224,225,255,.42)) !important;
+  box-shadow: inset 2px 0 0 rgba(73,181,221,.48), inset 0 0 0 1px rgba(118,205,235,.28);
+}
+html.inori-frost-theme [data-user-message-bubble]:hover {
+  background: linear-gradient(145deg, rgba(231,248,255,.82), rgba(222,231,255,.62)) !important;
+  box-shadow: inset 0 0 0 1px rgba(111,202,234,.38), 0 8px 22px -16px rgba(37,126,166,.58);
+  transform: translateY(-1px);
+}
+html.inori-frost-theme [data-file-reference]:hover {
+  color: #1888b6 !important;
+  filter: drop-shadow(0 0 5px rgba(91,199,235,.35));
+  text-decoration-color: rgba(68,181,222,.72) !important;
+}
+html.inori-frost-theme [data-testid="generated-image-preview"]:hover,
+html.inori-frost-theme [data-markdown-image-preview-trigger]:hover {
+  box-shadow: 0 0 0 2px rgba(255,255,255,.86), 0 0 0 4px rgba(89,193,230,.46), 0 14px 34px -18px rgba(31,117,157,.72) !important;
+  filter: brightness(1.035) saturate(1.04);
+  transform: translateY(-2px);
+}
+
+/* Menus, dialogs and tooltips become layered frost glass. */
+html.inori-frost-theme [role="dialog"],
+html.inori-frost-theme [role="menu"],
+html.inori-frost-theme [role="listbox"],
+html.inori-frost-theme [data-radix-popper-content-wrapper],
+html.inori-frost-theme [data-radix-popper-content-wrapper] > *,
+html.inori-frost-theme body > span[class*="composer-adjacent-max-width"] > div {
+  background:
+    radial-gradient(circle at 88% 9%, rgba(214,216,255,.48), transparent 28%),
+    linear-gradient(150deg, rgba(252,255,255,.97), rgba(227,248,255,.95) 68%, rgba(235,236,255,.94)) !important;
+  border: 1px solid rgba(93,190,226,.58) !important;
+  border-radius: 14px !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.74), 0 20px 52px -25px rgba(29,108,147,.58), 0 0 22px rgba(100,202,236,.15) !important;
+  backdrop-filter: blur(24px) saturate(1.14) !important;
+}
+html.inori-frost-theme body > span[class*="composer-adjacent-max-width"] button:hover,
+html.inori-frost-theme body > span[class*="composer-adjacent-max-width"] [role="button"]:hover {
+  color: #204d68 !important;
+  background: linear-gradient(100deg, rgba(192,235,250,.76), rgba(225,247,254,.66), rgba(222,222,255,.52)) !important;
+  box-shadow: inset 2px 0 0 rgba(65,177,218,.56), inset 0 0 0 1px rgba(112,204,235,.3);
+}
+html.inori-frost-theme [role="tooltip"] {
+  color: #214b65 !important;
+  background: linear-gradient(145deg, rgba(248,254,255,.98), rgba(211,241,252,.96)) !important;
+  border: 1px solid rgba(92,188,225,.58) !important;
+  box-shadow: 0 8px 24px -14px rgba(29,111,151,.65), 0 0 12px rgba(105,204,237,.18) !important;
+}
+html.inori-frost-theme [role="menuitem"]:hover,
+html.inori-frost-theme [role="menuitem"][data-highlighted],
+html.inori-frost-theme [role="option"]:hover,
+html.inori-frost-theme [role="option"][data-highlighted] {
+  color: #204d68 !important;
+  background: linear-gradient(100deg, rgba(192,235,250,.76), rgba(225,247,254,.66), rgba(222,222,255,.52)) !important;
+  box-shadow: inset 2px 0 0 rgba(65,177,218,.56), inset 0 0 0 1px rgba(112,204,235,.3);
+  transform: translateX(1px);
+}
+
+/* Keyboard users get a crystal ring instead of the default flat outline. */
+html.inori-frost-theme button:focus-visible,
+html.inori-frost-theme [role="button"]:focus-visible,
+html.inori-frost-theme [role="menuitem"]:focus-visible,
+html.inori-frost-theme [role="option"]:focus-visible,
+html.inori-frost-theme [role="tab"]:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(250,254,255,.98), 0 0 0 4px rgba(75,184,226,.66), 0 0 16px rgba(89,201,237,.3) !important;
+}
+html.inori-frost-theme [role="tab"][aria-selected="true"] {
+  color: #19455f !important;
+  background: linear-gradient(180deg, rgba(225,248,255,.72), rgba(201,235,249,.66)) !important;
+  box-shadow: inset 0 -2px 0 #54bce5, 0 5px 16px -13px rgba(31,120,162,.72);
+}
+
+/* v1.5: restrained aurora-rift and snow-crystal seal task states. */
+#inori-frost-task-status {
+  position: absolute;
+  z-index: 6;
+  top: 8px;
+  right: 12px;
+  display: inline-flex;
+  height: 27px;
+  align-items: center;
+  padding: 0 12px 0 31px;
+  border: 1px solid rgba(111,177,207,.42);
+  border-radius: 0;
+  clip-path: polygon(7px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 7px 100%, 0 calc(100% - 7px), 0 7px);
+  pointer-events: none;
+  color: #315b73;
+  background: linear-gradient(108deg, rgba(249,254,255,.94), rgba(228,244,251,.84) 62%, rgba(242,239,255,.8));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.92), 0 10px 24px -18px rgba(34,100,137,.8);
+  filter: drop-shadow(0 0 7px rgba(91,184,221,.18));
+  white-space: nowrap;
+  backdrop-filter: blur(16px) saturate(1.12);
+  isolation: isolate;
+}
+#inori-frost-task-status span {
+  padding-right: 7px;
+  margin-right: 7px;
+  border-right: 1px solid rgba(79,149,181,.26);
+  font-size: 8px;
+  font-weight: 760;
+  line-height: 1;
+  letter-spacing: .16em;
+  opacity: .7;
+}
+#inori-frost-task-status strong {
+  font-size: 11px;
+  font-weight: 680;
+  line-height: 1;
+  letter-spacing: .1em;
+}
+#inori-frost-task-status::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  top: 7px;
+  width: 13px;
+  height: 13px;
+  pointer-events: none;
+}
+#inori-frost-task-status::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 4px;
+  bottom: 1px;
+  left: 4px;
+  height: 1px;
+  pointer-events: none;
+}
+#inori-frost-task-status[data-state="running"] {
+  border-color: rgba(78,176,217,.54);
+  color: #285d7c;
+  background: linear-gradient(108deg, rgba(250,255,255,.95), rgba(220,244,253,.86) 58%, rgba(237,232,255,.82));
+  filter: drop-shadow(0 0 9px rgba(79,188,230,.24));
+  animation: inori-task-running-badge 3.2s ease-in-out infinite;
+}
+#inori-frost-task-status[data-state="running"]::before {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  background: conic-gradient(from 25deg, #f8feff, #5bd5ff 24%, #8478e8 53%, #d9c8ff 74%, #f8feff);
+  box-shadow: 0 0 8px rgba(77,199,242,.64), inset 0 0 0 3px rgba(255,255,255,.58);
+  animation: inori-task-running-nucleus 2.8s linear infinite;
+}
+#inori-frost-task-status[data-state="running"]::after {
+  background: linear-gradient(90deg, transparent 0 8%, rgba(76,202,244,.42) 27%, #fff 45%, rgba(152,128,237,.55) 57%, transparent 82%) 100% 0 / 190% 100% no-repeat;
+  filter: drop-shadow(0 0 4px rgba(81,199,239,.7));
+  animation: inori-task-running-current 2.6s cubic-bezier(.45,0,.22,1) infinite;
+}
+#inori-frost-task-status[data-state="complete"] {
+  color: #536b7a;
+  border-color: rgba(132,167,187,.48);
+  background: linear-gradient(108deg, rgba(253,255,255,.96), rgba(235,245,249,.88) 64%, rgba(250,239,247,.78));
+  filter: drop-shadow(0 0 7px rgba(118,165,190,.18));
+  animation: inori-task-complete-badge 820ms cubic-bezier(.18,.85,.3,1) both;
+}
+#inori-frost-task-status[data-state="complete"]::before {
+  content: "❄";
+  display: grid;
+  place-items: center;
+  color: #779bb0;
+  font-size: 14px;
+  line-height: 1;
+  text-shadow: 0 0 7px rgba(140,207,230,.48), 4px 0 10px rgba(229,178,211,.3);
+}
+#inori-frost-task-status[data-state="complete"]::after {
+  background: linear-gradient(90deg, transparent, rgba(112,170,197,.46) 32%, rgba(255,255,255,.96) 50%, rgba(217,169,203,.32) 68%, transparent);
+  filter: drop-shadow(0 0 3px rgba(110,174,201,.44));
+}
+
+html.inori-frost-theme [data-codex-composer-root][data-inori-task-state="running"] .composer-surface-chrome {
+  border: 1px solid rgba(76,168,208,.72) !important;
+  background:
+    radial-gradient(ellipse at 92% 5%, rgba(188,178,248,.14), transparent 27%),
+    radial-gradient(ellipse at 8% 100%, rgba(115,215,244,.11), transparent 24%),
+    linear-gradient(154deg, rgba(255,255,255,.96), rgba(234,249,254,.9) 64%, rgba(242,241,255,.84)) !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.86), inset 0 15px 30px rgba(255,255,255,.32), 0 0 0 2px rgba(129,210,239,.11), 0 17px 40px -27px rgba(28,116,157,.72) !important;
+  animation: inori-task-running-frame 3.6s ease-in-out infinite;
+}
+html.inori-frost-theme [data-codex-composer-root][data-inori-task-state="running"] .composer-surface-chrome::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  right: 16px;
+  bottom: -1px;
+  left: 16px;
+  height: 15px;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 0 8%, rgba(80,210,246,.74) 24%, #fff 43%, rgba(158,132,236,.76) 53%, transparent 76%) 100% 100% / 210% 2px no-repeat,
+    linear-gradient(132deg, transparent 0 46%, rgba(90,197,234,.5) 47% 50%, transparent 51%) 18% 100% / 38px 12px no-repeat,
+    linear-gradient(48deg, transparent 0 46%, rgba(137,144,225,.42) 47% 50%, transparent 51%) 51% 100% / 42px 13px no-repeat,
+    linear-gradient(135deg, transparent 0 47%, rgba(83,184,223,.38) 48% 50%, transparent 51%) 82% 100% / 34px 10px no-repeat;
+  filter: drop-shadow(0 0 5px rgba(86,196,236,.54));
+  animation: inori-task-running-rift 2.9s cubic-bezier(.45,0,.2,1) infinite;
+}
+html.inori-frost-theme [data-codex-composer-root][data-inori-task-state="running"] .composer-surface-chrome::after {
+  background:
+    radial-gradient(circle at 8% 100%, rgba(83,207,242,.11), transparent 20%),
+    radial-gradient(circle at 92% 0, rgba(177,151,239,.12), transparent 24%),
+    linear-gradient(118deg, rgba(255,255,255,.42), transparent 24% 78%, rgba(174,218,238,.12));
+  animation: inori-task-running-atmosphere 4.8s ease-in-out infinite alternate;
+}
+html.inori-frost-theme button[data-inori-primary-action="running"] {
+  box-shadow: 0 0 0 1px rgba(255,255,255,.78), 0 0 0 3px rgba(81,193,234,.16), 0 0 14px rgba(93,176,226,.3) !important;
+}
+
+html.inori-frost-theme [data-codex-composer-root][data-inori-task-state="complete"] .composer-surface-chrome {
+  border: 1px solid rgba(119,167,190,.62) !important;
+  background:
+    radial-gradient(ellipse at 88% 0, rgba(220,187,214,.1), transparent 24%),
+    linear-gradient(154deg, rgba(255,255,255,.97), rgba(237,249,252,.91) 62%, rgba(246,243,251,.87)) !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.9), inset 0 15px 30px rgba(255,255,255,.34), 0 0 0 2px rgba(128,184,208,.08), 0 16px 38px -28px rgba(42,105,133,.64) !important;
+  animation: inori-task-complete-frame 980ms cubic-bezier(.16,.86,.28,1) both;
+}
+html.inori-frost-theme [data-codex-composer-root][data-inori-task-state="complete"] .composer-surface-chrome::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: -22px;
+  right: 118px;
+  width: 54px;
+  height: 54px;
+  pointer-events: none;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  background:
+    radial-gradient(circle, rgba(255,255,255,.98) 0 3px, transparent 3.5px),
+    linear-gradient(45deg, transparent 47%, rgba(113,174,202,.54) 48% 51%, transparent 52%),
+    linear-gradient(-45deg, transparent 47%, rgba(219,170,204,.34) 48% 51%, transparent 52%),
+    linear-gradient(135deg, rgba(255,255,255,.88), rgba(207,235,245,.46) 52%, rgba(241,220,235,.36));
+  box-shadow: inset 0 0 0 1px rgba(112,170,197,.38);
+  filter: drop-shadow(0 0 7px rgba(107,182,211,.32));
+  animation: inori-task-complete-seal 960ms cubic-bezier(.18,.86,.28,1) both;
+}
+html.inori-frost-theme [data-codex-composer-root][data-inori-task-state="complete"] .composer-surface-chrome::after {
+  background:
+    linear-gradient(90deg, transparent, rgba(113,169,194,.32) 28%, rgba(255,255,255,.88) 50%, rgba(219,173,205,.24) 70%, transparent) 100% 0 / 250px 1px no-repeat,
+    radial-gradient(ellipse at 88% 0, rgba(128,190,214,.09), transparent 25%),
+    linear-gradient(118deg, rgba(255,255,255,.44), transparent 26% 80%, rgba(178,213,229,.1));
+}
+html.inori-frost-theme button[data-inori-primary-action="complete"] {
+  box-shadow: 0 0 0 1px rgba(120,164,185,.16), 0 5px 12px -9px rgba(55,102,126,.48) !important;
+}
+
+@keyframes inori-task-running-frame {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(84,183,221,.12)); }
+  50% { filter: drop-shadow(0 0 9px rgba(91,186,226,.25)); }
+}
+@keyframes inori-task-running-canvas-pulse {
+  from { background-position: -5% 6%, 105% -5%, 50% 50%, 0 0; filter: saturate(.96) brightness(1); }
+  to { background-position: 2% -3%, 98% 5%, 54% 46%, 0 0; filter: saturate(1.08) brightness(1.015); }
+}
+@keyframes inori-task-running-canvas-flow {
+  from { background-position: 130% 0, 0 0, 22px 16px; }
+  to { background-position: -80% 0, 18px 9px, 55px 38px; }
+}
+@keyframes inori-signal-map-breathe {
+  from { opacity: .64; filter: saturate(.94); }
+  to { opacity: .82; filter: saturate(1.08); }
+}
+@keyframes inori-signal-route-forward {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -100; }
+}
+@keyframes inori-signal-star-twinkle {
+  0%, 100% { opacity: .58; transform: scale(.92); }
+  48% { opacity: 1; transform: scale(1.12); }
+}
+@keyframes inori-signal-star-ray-twinkle {
+  0%, 100% { opacity: .42; }
+  48% { opacity: .9; }
+  56% { opacity: .58; }
+}
+@keyframes inori-signal-beacon {
+  0%, 100% { opacity: .54; filter: drop-shadow(0 0 1px rgba(69,174,207,.18)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 5px rgba(69,174,207,.52)); }
+}
+@keyframes inori-signal-map-freeze {
+  0% { opacity: .08; filter: brightness(1.14) blur(.5px); }
+  62% { opacity: .69; filter: brightness(1.04) blur(0); }
+  100% { opacity: .62; filter: none; }
+}
+@keyframes inori-signal-terminal-seal {
+  0% { opacity: 0; filter: drop-shadow(0 0 14px rgba(98,183,196,.72)); }
+  68% { opacity: 1; filter: drop-shadow(0 0 8px rgba(98,183,196,.58)); }
+  100% { opacity: .9; filter: drop-shadow(0 0 5px rgba(98,183,196,.4)); }
+}
+@keyframes inori-task-running-rift {
+  0%, 12% { opacity: .42; background-position: 130% 100%, 18% 100%, 51% 100%, 82% 100%; }
+  48% { opacity: .92; }
+  88%, 100% { opacity: .4; background-position: -70% 100%, 18% 100%, 51% 100%, 82% 100%; }
+}
+@keyframes inori-task-running-atmosphere {
+  from { opacity: .54; transform: translateX(-3px); }
+  to { opacity: .9; transform: translateX(3px); }
+}
+@keyframes inori-task-running-badge {
+  0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 7px rgba(79,188,230,.18)); }
+  50% { transform: translateY(-1px); filter: drop-shadow(0 0 11px rgba(115,161,231,.3)); }
+}
+@keyframes inori-task-running-nucleus {
+  0% { transform: rotate(0deg) scale(.92); }
+  50% { transform: rotate(180deg) scale(1.06); }
+  100% { transform: rotate(360deg) scale(.92); }
+}
+@keyframes inori-task-running-current {
+  from { background-position: 120% 0; }
+  to { background-position: -80% 0; }
+}
+@keyframes inori-task-complete-frame {
+  0% { filter: brightness(1.08) drop-shadow(0 0 12px rgba(103,184,212,.22)); }
+  100% { filter: none; }
+}
+@keyframes inori-task-complete-badge {
+  0% { opacity: 0; transform: translateX(8px); }
+  58% { opacity: 1; transform: translateX(-1px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes inori-task-complete-seal {
+  0% { opacity: 0; transform: scale(.35) rotate(-45deg); }
+  62% { opacity: .92; transform: scale(1.08) rotate(4deg); }
+  100% { opacity: .72; transform: scale(1) rotate(0); }
+}
+@keyframes inori-task-complete-canvas-seal {
+  0% { opacity: 0; filter: brightness(1.08) drop-shadow(0 0 12px rgba(103,184,194,.2)); }
+  55% { opacity: .58; }
+  100% { opacity: .42; filter: drop-shadow(0 0 5px rgba(107,178,195,.12)); }
+}
+
+@media (max-width: 1300px) { #inori-frost-hero { opacity: .68; background-position: 54% top; } }
+@media (max-width: 960px) { #inori-frost-hero { opacity: .42; background-position: 58% top; } #inori-frost-badge span { display: none; } }
+@media (max-width: 760px) { #inori-frost-signal-map text { display: none; } }
+@media (max-width: 760px), (prefers-reduced-motion: reduce) {
+  #inori-frost-hero { display: none !important; }
+  html.inori-frost-theme main button.min-h-26,
+  html.inori-frost-theme main button.min-h-26::before,
+  html.inori-frost-theme button.border-token-border,
+  html.inori-frost-theme .app-shell-left-panel button,
+  html.inori-frost-theme [data-app-action-sidebar-project-row],
+  html.inori-frost-theme [data-app-action-sidebar-thread-row],
+  html.inori-frost-theme [data-slot="thread-summary-panel-item-button"],
+  html.inori-frost-theme [data-user-message-bubble],
+  html.inori-frost-theme [data-file-reference],
+  html.inori-frost-theme [data-testid="generated-image-preview"],
+  html.inori-frost-theme.inori-frost-task-running main.main-surface::before,
+  html.inori-frost-theme.inori-frost-task-running main.main-surface::after,
+  html.inori-frost-theme.inori-frost-task-complete main.main-surface::before,
+  html.inori-frost-theme.inori-frost-task-complete main.main-surface::after,
+  #inori-frost-signal-map,
+  #inori-frost-signal-map *,
+  html.inori-frost-theme [data-codex-composer-root][data-inori-task-state] .composer-surface-chrome,
+  html.inori-frost-theme [data-codex-composer-root][data-inori-task-state] .composer-surface-chrome::before,
+  #inori-frost-task-status,
+  #inori-frost-task-status::before,
+  #inori-frost-task-status::after { transition: none !important; animation: none !important; }
+}

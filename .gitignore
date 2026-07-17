@@ -1,0 +1,44 @@
+# Local editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# Runtime state and temporary output
+runtime/
+state/
+logs/
+work/
+tmp/
+temp/
+*.log
+*.tmp
+*.bak
+*.zip
+
+# Profiles and application data
+profiles/
+user-data/
+codex-profile/
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*credential*
+*secret*
+
+# Real UI review artifacts should remain outside Git
+**/*screenshot*
+**/*screen-shot*
+**/*screen_shot*
+**/*capture*
+**/*clipboard*
+**/*preview*
+**/*mockup*
+**/*concept*

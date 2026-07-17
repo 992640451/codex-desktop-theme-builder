@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Theme Builder / 桌面主题构建器"
+  short_description: "Build and safely release Codex themes / 构建并安全发布主题"
+  default_prompt: "Use $codex-desktop-theme-builder to design and safely release a Codex Desktop theme（设计并安全发布 Codex 桌面主题）。"
